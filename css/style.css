@@ -107,14 +107,13 @@ hr{
         width: 100%;
     }
    
-    .players, .blogs,.courses{
-        background-color: red;
-        grid-template-columns: repeat(1,fr);
+    .players, .blogs, .courses{
+        grid-template-columns: 1fr;
     }
-    .player, .blog{
+     .player, .blog{
         flex-direction: column;
     }
-    
+     
 }
 /* table devices */
 @media only screen and (min-width:688px) and (max-width:992px) {
@@ -123,11 +122,11 @@ hr{
         width: 100%;
     }
     .blogs{
-        grid-template-columns: repeat(1,fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .players, .courses{
-        background-color: #FFC014;
-        grid-template-columns: repeat(1,fr);
+        
+        grid-template-columns: repeat(2,1fr);
     }
     
 }
